@@ -13,6 +13,7 @@ nic.printname()
 class Child(Parent):
   def __init__(self, fname, lname, year):
     super().__init__(fname, lname)
+    # By calling super().__init__(), you can execute the __init__ method of the parent class as if it were defined in the current class
     self.graduationyear = year
 
   def welcome(self):
