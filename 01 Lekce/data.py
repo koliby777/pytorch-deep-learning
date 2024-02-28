@@ -46,9 +46,10 @@ def plot_predictions(train_data=X_train,
     plt.scatter(test_data, predictions, c="r", s=4, label="Predictions")
 
   # Show the legend
-  plt.legend(prop={"size": 14});
+  plt.legend(prop={"size": 14})
+  plt.show()
 
-plot_predictions();
+plot_predictions()
 
 
 
