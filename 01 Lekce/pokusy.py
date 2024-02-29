@@ -3,7 +3,7 @@ from torch.utils.data import Dataset, DataLoader    # dataset representation and
 
 
 torch.cuda.is_available                                     # check for cuda
-x = x.cuda()                                                # move x's data from
+x = torch.rand(size=(7, 7)).to("cuda")                                                # move x's data from
                                                             # CPU to GPU and return new object
 
 x = x.cpu()                                                 # move x's data from GPU to CPU
